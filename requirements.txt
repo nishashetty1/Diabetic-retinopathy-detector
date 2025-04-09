@@ -1,0 +1,9 @@
+tensorflow
+scikit-learn
+pillow
+pandas
+joblib
+numpy
+kaggle
+tqdm
+requests
