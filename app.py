@@ -117,22 +117,8 @@ def main():
         with st.sidebar:
             st.success("""
             🟢 Models loaded successfully!
-            Using: backup_training_results/
-            - CNN Model
-            - RF Model
             """)
             
-            # Display model details
-            st.header("Model Information")
-            model_info = get_model_info()
-            for filename, info in model_info.items():
-                st.info(f"""
-                {filename}
-                ────────────
-                Status: {info['status']}
-                Size: {info['size']}
-                Last Modified: {info['last_modified']}
-                """)
     except Exception as e:
         model_loaded = False
         with st.sidebar:
